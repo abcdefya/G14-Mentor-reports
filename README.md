@@ -101,6 +101,7 @@ Luồng này đảm bảo:
 
   * Tối ưu giao diện hội thoại
   * Cải thiện feedback khi luyện nói
+  * Thêm hiển thị học từ điển bằng flashcard
 * Triển khai cơ chế **cache dữ liệu tin nhắn**:
 
   * Giảm latency
@@ -114,6 +115,9 @@ Luồng này đảm bảo:
 
   * Lấy lịch sử chat
   * Xóa lịch sử chat
+  * Chấm điểm ngữ pháp
+  * Thêm dữ liệu flashcard
+  * Thêm tool thêm mới từ điển vào flashcard cho agent
 * Tích hợp **Guardrails cho input/output**:
 
   * Kiểm soát nội dung người dùng
