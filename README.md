@@ -112,7 +112,8 @@ Luồng này đảm bảo:
 ### **3.2. Backend**
 
 * Phát triển thêm các API:
-
+  * Đăng nhập từ bên thứ 3 (google, facebook,...)
+  * Phân quyền gói dùng (cơ bản, premium)
   * Lấy lịch sử chat
   * Xóa lịch sử chat
   * Chấm điểm ngữ pháp
