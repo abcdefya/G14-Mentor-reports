@@ -1,6 +1,6 @@
 
 # **BÁO CÁO TIẾN ĐỘ DỰ ÁN AI AGENT LUYỆN NÓI TIẾNG ANH**
-
+Nhóm 14 - VinAI
 ## **1. Tổng quan dự án**
 
 Dự án xây dựng một hệ thống AI Agent hỗ trợ người dùng luyện nói tiếng Anh thông qua hội thoại tương tác, tích hợp công nghệ xử lý ngôn ngữ tự nhiên (LLM), tổng hợp giọng nói (TTS), và đánh giá phát âm. Hệ thống được thiết kế theo kiến trúc microservices, triển khai trên nền tảng cloud với khả năng mở rộng và tự động hóa cao.
