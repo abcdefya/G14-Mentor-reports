@@ -20,15 +20,26 @@ Vinai2A2026+
 ### **2.1. Frontend – Backend (Core Features)**
 
 Trong giai đoạn hiện tại, hệ thống đã hoàn thiện các chức năng cốt lõi phục vụ trải nghiệm người dùng:
+* [x] Cá nhân hóa phản hồi theo user **(NEW UPDATE - route system prompt theo category, topic từ người dùng)**
+* [x] Kiểm soát nội dung người dùng **(NEW UPDATE - Hiện tại chúng em hardcode các từ khóa nhạy cảm, xóa PII, limit input output length, em sẽ cải tiến sau)**
+![alt text](image-10.png)
 
-* Xây dựng hệ thống **xác thực người dùng** bao gồm đăng ký và đăng nhập.
-* Phát triển tính năng **lựa chọn chủ đề (topics)** để cá nhân hóa nội dung luyện tập.
-* Triển khai chức năng **giao tiếp trực tiếp với AI Agent**, hỗ trợ hội thoại theo thời gian thực.
-* Tích hợp dịch vụ **ElevenLabs** để xử lý chuyển đổi văn bản thành giọng nói (Text-to-Speech), trả về voice tự nhiên cho Agent.
-* Hiển thị **kết quả chấm điểm phát âm** của người dùng sau mỗi lượt nói.
-* Xây dựng cơ chế **lưu trữ lịch sử hội thoại** vào hệ thống database.
-* Lưu trữ file voice của người dùng vào hệ thống object storage **MinIO**.
-* Cho phép người dùng lựa chọn **giọng nói (nam/nữ)** cho Agent.
+* [x] Hạn chế hallucination và phản hồi không phù hợp từ LLM **(NEW UPDATE)**
+* [x] Lấy lịch sử chat **(NEW UPDATE)**
+* [x] Xóa lịch sử chat **(NEW UPDATE)**
+![alt text](image-9.png)
+
+* [x] Chấm điểm ngữ pháp **(NEW UPDATE)**
+![alt text](image-8.png)
+
+* [x] Xây dựng hệ thống **xác thực người dùng** bao gồm đăng ký và đăng nhập.
+* [x] Phát triển tính năng **lựa chọn chủ đề (topics)** để cá nhân hóa nội dung luyện tập.
+* [x] Triển khai chức năng **giao tiếp trực tiếp với AI Agent**, hỗ trợ hội thoại theo thời gian thực.
+* [x] Tích hợp dịch vụ **ElevenLabs** để xử lý chuyển đổi văn bản thành giọng nói (Text-to-Speech), trả về voice tự nhiên cho Agent.
+* [x] Hiển thị **kết quả chấm điểm phát âm** của người dùng sau mỗi lượt nói.
+* [x] Xây dựng cơ chế **lưu trữ lịch sử hội thoại** vào hệ thống database.
+* [x] Lưu trữ file voice của người dùng vào hệ thống object storage **MinIO**.
+* [x] Cho phép người dùng lựa chọn **giọng nói (nam/nữ)** cho Agent.
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
@@ -114,19 +125,8 @@ Luồng này đảm bảo:
 * Phát triển thêm các API:
   * Đăng nhập từ bên thứ 3 (google, facebook,...)
   * Phân quyền gói dùng (cơ bản, premium)
-  * Lấy lịch sử chat
-  * Xóa lịch sử chat
-  * Chấm điểm ngữ pháp
   * Thêm dữ liệu flashcard
   * Thêm tool thêm mới từ điển vào flashcard cho agent
-* Tích hợp **Guardrails cho input/output**:
-
-  * Kiểm soát nội dung người dùng
-  * Hạn chế hallucination và phản hồi không phù hợp từ LLM
-* Thiết kế và tối ưu **prompt engineering**:
-
-  * Cải thiện chất lượng hội thoại
-  * Cá nhân hóa phản hồi theo user
 
 ---
 
