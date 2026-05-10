@@ -20,16 +20,23 @@ Vinai2A2026+
 ### **2.1. Frontend – Backend (Core Features)**
 
 Trong giai đoạn hiện tại, hệ thống đã hoàn thiện các chức năng cốt lõi phục vụ trải nghiệm người dùng:
-* [x] Cá nhân hóa phản hồi theo user **(NEW UPDATE - route system prompt theo category, topic từ người dùng)**
-* [x] Kiểm soát nội dung người dùng **(NEW UPDATE - Hiện tại chúng em hardcode các từ khóa nhạy cảm, xóa PII, limit input output length, em sẽ cải tiến sau)**
+* [x] Thêm tính năng học bằng thẻ flashcard **(NEW UPDATE - Chưa Deploy)**
+![alt text](image-11.png)
+![alt text](image-13.png)
+* [x] Triển khai stack VEK (vector-elasticsearch-kibana) cho trace logs **(NEW UPDATE - Chưa Deploy)**
+![alt text](image-14.png)
+* [x] Triển khai Grafana + Prometheous cho theo dõi metrics (P50, P95, P99, TTFT, Latency, cost,...) **(NEW UPDATE - Chưa Deploy)**
+![alt text](image-15.png)
+* [x] Cá nhân hóa phản hồi theo user 
+* [x] Kiểm soát nội dung người dùng 
 ![alt text](image-10.png)
 
-* [x] Hạn chế hallucination và phản hồi không phù hợp từ LLM **(NEW UPDATE)**
-* [x] Lấy lịch sử chat **(NEW UPDATE)**
-* [x] Xóa lịch sử chat **(NEW UPDATE)**
+* [x] Hạn chế hallucination và phản hồi không phù hợp từ LLM 
+* [x] Lấy lịch sử chat 
+* [x] Xóa lịch sử chat *
 ![alt text](image-9.png)
 
-* [x] Chấm điểm ngữ pháp **(NEW UPDATE)**
+* [x] Chấm điểm ngữ pháp 
 ![alt text](image-8.png)
 
 * [x] Xây dựng hệ thống **xác thực người dùng** bao gồm đăng ký và đăng nhập.
@@ -112,7 +119,6 @@ Luồng này đảm bảo:
 
   * Tối ưu giao diện hội thoại
   * Cải thiện feedback khi luyện nói
-  * Thêm hiển thị học từ điển bằng flashcard
 * Triển khai cơ chế **cache dữ liệu tin nhắn**:
 
   * Giảm latency
@@ -123,10 +129,8 @@ Luồng này đảm bảo:
 ### **3.2. Backend**
 
 * Phát triển thêm các API:
-  * Đăng nhập từ bên thứ 3 (google, facebook,...)
   * Phân quyền gói dùng (cơ bản, premium)
-  * Thêm dữ liệu flashcard
-  * Thêm tool thêm mới từ điển vào flashcard cho agent
+
 
 ---
 
@@ -136,15 +140,3 @@ Luồng này đảm bảo:
 
   * Giảm thời gian build
   * Tăng hiệu quả detect thay đổi
-* Xây dựng hệ thống **logging & monitoring**:
-
-  * Theo dõi hiệu năng ứng dụng
-  * Phát hiện lỗi và bottleneck
-
-Dự kiến triển khai logging stack theo một trong hai hướng:
-
-* **ELK Stack**: Elasticsearch – Logstash – Kibana
-* **VEK Stack**: Vector – Elasticsearch – Kibana
-
-Trong đó, **Vector** được đánh giá nhẹ hơn Logstash và phù hợp với hệ thống cần tối ưu tài nguyên.
-
