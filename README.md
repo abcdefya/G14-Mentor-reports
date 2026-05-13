@@ -20,12 +20,25 @@ Vinai2A2026+
 ### **2.1. Frontend – Backend (Core Features)**
 
 Trong giai đoạn hiện tại, hệ thống đã hoàn thiện các chức năng cốt lõi phục vụ trải nghiệm người dùng:
-* [x] Thêm tính năng học bằng thẻ flashcard **(NEW UPDATE - Chưa Deploy)**
+* [x] Đăng nhập bằng dịch vụ thứ 3 **(NEW UPDATE)**
+![alt text](image-16.png)
+
+* [x] Đổi mật khẩu tài khoản **(NEW UPDATE)**
+![alt text](image-17.png)
+
+* [x] Tùy chọn accent giọng nói **(NEW UPDATE)**
+![alt text](image-18.png)
+
+* [x] Agent thêm các tool để tương tác với flashcard của người dùng **(NEW UPDATE)**
+![alt text](image-19.png)
+![alt text](image-20.png)
+
+* [x] Thêm tính năng học bằng thẻ flashcard **(NEW UPDATE)**
 ![alt text](image-11.png)
 ![alt text](image-13.png)
-* [x] Triển khai stack VEK (vector-elasticsearch-kibana) cho trace logs **(NEW UPDATE - Chưa Deploy)**
+* [x] Triển khai stack VEK (vector-elasticsearch-kibana) cho trace logs **(NEW UPDATE)**
 ![alt text](image-14.png)
-* [x] Triển khai Grafana + Prometheous cho theo dõi metrics (P50, P95, P99, TTFT, Latency, cost,...) **(NEW UPDATE - Chưa Deploy)**
+* [x] Triển khai Grafana + Prometheous cho theo dõi metrics (P50, P95, P99, TTFT, Latency, cost,...) **(NEW UPDATE)**
 ![alt text](image-15.png)
 * [x] Cá nhân hóa phản hồi theo user 
 * [x] Kiểm soát nội dung người dùng 
